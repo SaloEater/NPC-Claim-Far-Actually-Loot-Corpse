@@ -84,9 +84,7 @@ function on_before_key_press(key, bind, dis, flags)
                                     return true
                                 end)
                             elseif IsMonster(obj) then
-                                printf("claim 1")
                                 ui_mutant_loot.loot_mutant(obj:section(), obj:clsid(), nil, sender, false, obj)
-                                printf("claim 2")
                             end
                         else
                             sender_com = character_community(sender)
